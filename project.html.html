@@ -1,0 +1,142 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Basics of Web Development</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Basic styling for a tablet-style layout */
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .tablet {
+            width: 800px;
+            background-color: #fff;
+            border: 12px solid #333;
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1, h2 {
+            color: #0073e6;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin: 8px 0;
+            padding: 8px;
+            border-radius: 5px;
+            color: #fff;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.3s ease;
+        }
+
+            li:hover {
+                transform: scale(1.05);
+            }
+        /* Unique styles for each programming language based on difficulty */
+        .html {
+            background-color: #e34f26; /* Easy */
+        }
+
+        .css {
+            background-color: #1572b6; /* Easy */
+        }
+
+        .javascript {
+            background-color: #f7df1e; /* Moderate */
+            color: #333;
+        }
+
+        .react {
+            background-color: #61dafb; /* Moderate */
+            color: #333;
+        }
+
+        .vue {
+            background-color: #42b883; /* Moderate */
+            color: #fff;
+        }
+
+        .angular {
+            background-color: #dd0031; /* Hard */
+        }
+
+        .node {
+            background-color: #8cc84b; /* Hard */
+            color: #fff;
+        }
+
+        .django {
+            background-color: #0c4b33; /* Hard */
+            color: #fff;
+        }
+
+        .ruby {
+            background-color: #cc342d; /* Hard */
+            color: #fff;
+        }
+
+        .sql {
+            background-color: #f29111; /* Moderate */
+            color: #fff;
+        }
+
+        .nosql {
+            background-color: #47a248; /* Moderate */
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="tablet">
+        <h1>The Basics of Web Development</h1>
+        <h2>Overview</h2>
+        <ul>
+            <li class="html" onclick="window.open('https://en.wikipedia.org/wiki/HTML', '_blank')">HTML - Structure</li>
+            <li class="css" onclick="window.open('https://en.wikipedia.org/wiki/Cascading_Style_Sheets', '_blank')">CSS - Styling</li>
+            <li class="javascript" onclick="window.open('https://en.wikipedia.org/wiki/JavaScript', '_blank')">JavaScript - Interactivity</li>
+            <li>
+                Front-End Frameworks
+                <ul class="sub-list">
+                    <li class="react" onclick="window.open('https://en.wikipedia.org/wiki/React_(JavaScript_library)', '_blank')">React</li>
+
+                    <li class="vue" onclick="window.open('https://en.wikipedia.org/wiki/Vue.js', '_blank')">Vue</li>
+                    <li class="angular" onclick="window.open('https://en.wikipedia.org/wiki/Angular_(web_framework)', '_blank')">Angular</li>
+                </ul>
+            </li>
+            <li>
+                Back-End Technologies
+                <ul class="sub-list">
+                    <li class="node" onclick="window.open('https://en.wikipedia.org/wiki/Node.js', '_blank')">Node.js</li>
+                    <li class="django" onclick="window.open('https://en.wikipedia.org/wiki/Django_(web_framework)', '_blank')">Django</li>
+                    <li class="ruby" onclick="window.open('https://en.wikipedia.org/wiki/Ruby_on_Rails', '_blank')">Ruby on Rails</li>
+                </ul>
+            </li>
+            <li>
+                Databases
+                <ul class="sub-list">
+                    <li class="sql" onclick="window.open('https://en.wikipedia.org/wiki/SQL', '_blank')">SQL - Structured Query Language</li>
+                    <li class="nosql" onclick="window.open('https://en.wikipedia.org/wiki/NoSQL', '_blank')">NoSQL - MongoDB, Firebase</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
